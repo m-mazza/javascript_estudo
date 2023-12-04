@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções - Prática</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+
+    <script>
+        var largura = prompt('Digite a largura do terreno - em metros: ');
+        var comprimento = prompt('Digite o comprimento do terreno - em metros: ');
+
+        var area = calcularAreaTerreno(largura, comprimento);
+
+        function calcularAreaTerreno (largura, comprimento) {
+            var area = largura * comprimento;
+            return area;
+        };
+    </script>
+
+</head>
+    <body class="mt-5">
+        <div class="container">
+            <h5 class="text-center mb-1">Funções - Prática</h5>
+            <a href="https://www.udemy.com/course/web-completo/learn/lecture/7916344#overview" class="d-block text-center pb-4 border-bottom">Video aula - https://www.udemy.com/course/web-completo/learn/lecture/7916344#overview</a>
+            <br>
+            <br>
+            <br>
+            <h5><script>document.write('O terreno possui ' + area + ' metros quadrados')</script></h5>
+        </div>
+    </body>
+</html>

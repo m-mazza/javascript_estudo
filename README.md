@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="javascript.png">
+  <img src="imagens/javascript.png">
 </div>
 
 ## Tópicos

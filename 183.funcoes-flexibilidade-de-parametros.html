@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções - Flexibilidade de parâmetros</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+
+    <script>
+        function soma(a, b){
+            // b = b === undefined ? 0 : b;
+            return a + b;
+        }
+    </script>
+
+</head>
+    <body class="mt-5">
+        <div class="container">
+            <h5 class="text-center mb-1">Flexibilidade de parâmetros</h5>
+            <a href="https://www.udemy.com/course/web-completo/learn/lecture/9251628#overview" class="d-block text-center pb-4 border-bottom">Video aula - https://www.udemy.com/course/web-completo/learn/lecture/9251628#overview</a>
+            <br>
+            <p>O JS possui uma característica que permite uma flexibilidade na determinação de parâmetros da função, ou seja eles não precisam ser necessariamente repassados para as funções.Essa flexibilidade em relação às quantidades de parâmetros torna possível eu informar dois parâmetros, mas informar apenas 1 ou nenhum ou 5 ou diversos parâmetros a mais.</p>
+            <br>
+            <br>
+            <p><strong>Ex. 1:<script>document.write(soma(7,7))</script></strong></p>
+            <p><strong>Ex. 2 - (com 4 param): <script>document.write(soma(7,7, 9, 12))</script></strong> - Apesar de a função soma pedir apenas 2 param e ser informado 4, o JS tem inteligencia necessária para descartar os que são informados de maneira extra.</p>
+            <p><strong>Ex. 3 - (com 1 param): <script>document.write(soma(7))</script></strong> - Não há necessariamente uma quebra de função. A Função considera o parametro vazio como undefined, assim a soma entre 7 + undefined é considerada NaN (not a number). Com um tratamento conseguimos mater o valor do único parâmetro.</p>
+        </div>
+    </body>
+</html>

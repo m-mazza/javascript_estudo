@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções - Escopo Variáveis</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <script>
+
+        var serie = "Breaking Bad";
+
+        function x () {
+            document.write('variável declarada dentro de um escopo da função --> '+ serie)
+        }
+    </script>
+
+</head>
+    <body class="mt-5">
+        <div class="container">
+            <h5 class="text-center mb-1">Escopo Variáveis</h5>
+            <a href="https://www.udemy.com/course/web-completo/learn/lecture/8605294#overview" class="d-block text-center pb-4 border-bottom">Video aula - https://www.udemy.com/course/web-completo/learn/lecture/8605294#overview</a>
+            <br>
+            <p class="mb-1">Embora sendo bem simples, o tema exige atenção para que as aplicações não sejam criadas com problemas.</p>
+            <p class="mb-1">1º: O JS possui 3 escopos. São eles: <b>escopo global</b>, <b>escopo da função</b> e <b>escopo de bloco</b>.</p>
+            <p class="mb-1">O escopo <strong>global</strong> é o script da função como um todo.</p>
+            <p class="mb-1">O escopo <strong>da função</strong> corresponde ao conteúdo incluído dentro de um bloco de função.</p>
+            <p class="mb-1">O escopo <strong>de bloco</strong> são instruções contida dentro de comandos "if" ou "switch"</p>
+            <br>
+            <br>
+            <p>
+                <script>
+                    if(true){
+                        document.write('variável declarada dentro de um escopo de bloco --> ' + serie)
+                    }
+                </script>
+            </p>
+            <p>
+                <script>
+                   x()
+                </script>
+            </p>
+        </div>
+    </body>
+</html>
