@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Funções - Escopo Variáveis</title>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
     <script>
@@ -12,7 +11,7 @@
         var serie = "Breaking Bad";
 
         function x () {
-            document.write('variável declarada dentro de um escopo da função --> '+ serie)
+            document.write('Variável acessada dentro de um <strong>escopo da função</strong> --> '+ serie)
         }
     </script>
 
@@ -29,18 +28,25 @@
             <p class="mb-1">O escopo <strong>de bloco</strong> são instruções contida dentro de comandos "if" ou "switch"</p>
             <br>
             <br>
-            <p>
+            <p class="mb-1">Ao declaramos uma variável: 'var serie'; no escopo global veja onde seu acesso é dado:</p>
+            <p class="mb-1">
                 <script>
                     if(true){
-                        document.write('variável declarada dentro de um escopo de bloco --> ' + serie)
+                        var serie2 = 'Game of Thrones';
+                        document.write('Variável acessada dentro de um <strong>escopo de bloco</strong> --> ' + serie)
                     }
                 </script>
             </p>
-            <p>
+            <p class="mb-1">
                 <script>
                    x()
                 </script>
             </p>
+            <p class="mb-1">Os escopos de <strong>função</strong> e <strong>bloco</strong> possuem acesso às <strong>variáveis no escopo global</strong> conforme vimos anteriormente.</p>
+            <br>
+            <br>
+            <p class="mb-1">Ao decalar uma variável em um escopo de bloco essa variável também se torna acessível no contexto global, visto que é feito uma elevação de escopo. Assim, a variável também se torna acessível ao escopo de função.</p>
+            <p class="mb-1">É importante ressaltar, que essa elevação de escopo não ocorre quando é criada uma variável em um escopo de função. Assim sendo, só fica disponível seu conteúdo nesse contexto.</p>
         </div>
     </body>
 </html>
