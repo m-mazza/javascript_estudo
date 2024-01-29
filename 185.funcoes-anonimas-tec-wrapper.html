@@ -7,9 +7,12 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
         <script>
-            function(){
-                document.write('Boas-vindas');
+            // wrapper (do ingles 'embrulho'; É a técnica de 'embrulhar uma função anônima' associando-a como valor de uma variável.)
+            // Assim sendo, a chamada da função pode ser feita a partir da variável + ().
+            var exibirSaudacao = function(nome){
+                document.write('Olá '+nome+', tudo bem?');
             }
+   
         </script>
     </head>
     <body class="mt-5">
@@ -17,10 +20,7 @@
             <h5 class="text-center mb-1">Funções Anônimas e a Técnica de Wrapper</h5>
             <a href="https://www.udemy.com/course/web-completo/learn/lecture/8605298#overview" class="d-block text-center pb-4 border-bottom">Video aula - https://www.udemy.com/course/web-completo/learn/lecture/8605298#overview</a>
             <br>
-
-
-
-
+            <script>exibirSaudacao('Marcus');</script>
         </div>
     </body>
 </html>

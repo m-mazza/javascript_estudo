@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Funções de callback</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+        <script>
+            //Funções de callback -> são funções encaminhada como parâmetro para outras funções.
+
+            function exibirArtigo(id, callbackSucesso, callbackErro){
+                //lógica: recuperar o id via requisição http
+                if(true){
+                    callbackSucesso('Funções de callback', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean est turpis...');
+                }else {
+                    callbackErro('Erro ao recuperar os dados');
+                }
+            }            
+            var callbackSucesso = function(titulo, descricao){
+                document.write('<h1>'+titulo+'</h1>');
+                document.write('<hr>');
+                document.write('<p>'+descricao+'</p>');
+            }
+            var callbackErro = function(erro){
+                document.write('<p><b>Erro:</b> '+erro+'</p>');
+            }
+        </script>
+    </head>
+    <body class="mt-5">
+        <div class="container">
+            <h5 class="text-center mb-1">Funções de callback</h5>
+            <a href="https://www.udemy.com/course/web-completo/learn/lecture/8605302#content" class="d-block text-center pb-4 border-bottom">Video aula - https://www.udemy.com/course/web-completo/learn/lecture/8605302#content</a>
+            <br>
+        
+            <script> exibirArtigo(1, callbackSucesso, callbackErro); </script>
+            <!-- na chamada da função, não posso usar (), usar callbackSucesso() idica que essa função deve ser executada e passado o valor dela. Mas usar apenas callbackSucesso indica que eu qureo passar a função inteira -->
+        </div>
+    </body>
+</html>

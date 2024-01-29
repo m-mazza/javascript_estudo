@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Funcões Nativas para Manipular Strings</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+
+    </head>
+    <body class="mt-5">
+        <div class="container">
+            <h5 class="text-center mb-1">Funcões Nativas para Manipular Strings</h5>
+            <a href="https://www.udemy.com/course/web-completo/learn/lecture/8587756#content" class="d-block text-center pb-4 border-bottom">Video aula - https://www.udemy.com/course/web-completo/learn/lecture/8587756#content</a>
+            <br>
+            <script>
+
+                var nome = 'Marcus Paulo Burlan de Freitas Mazza do Amaral';
+
+                //propriedade lenght - conta a quantidade de caracteres de uma string. Espaços são contados. Inicia-se a contagem no índice 0
+                document.write(nome.length);
+                document.write('<br>');
+
+                //método charAt - retorna o caracter do índice especificado
+                document.write(nome.charAt(7));
+                document.write('<br>');
+
+                //método indexOf - mostra o índice da primeira ocorrência do tipo informado como parâmetro na string
+                //valores informados que não existirem na string apontará o retono de -1
+                document.write(nome.indexOf('F'));
+                document.write('<br>');
+
+                //método replace - substituí o valor específicado por outra string
+                //o primeiro parâmetro mostra o valor a ser alterado e o segundo o valor que substituirá
+                document.write(nome.replace('Paulo Burlan de Freitas Mazza do Amaral', 'Mazza'));
+                document.write('<br>');
+            </script>
+        </div>
+    </body>
+</html>
