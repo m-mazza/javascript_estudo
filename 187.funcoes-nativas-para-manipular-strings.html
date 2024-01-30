@@ -15,7 +15,7 @@
             <br>
             <script>
 
-                var nome = 'Marcus Paulo Burlan de Freitas Mazza do Amaral';
+                var nome = ' Marcus Paulo Burlan de Freitas Mazza do Amaral ';
 
                 //propriedade lenght - conta a quantidade de caracteres de uma string. Espaços são contados. Inicia-se a contagem no índice 0
                 document.write(nome.length);
@@ -33,6 +33,23 @@
                 //método replace - substituí o valor específicado por outra string
                 //o primeiro parâmetro mostra o valor a ser alterado e o segundo o valor que substituirá
                 document.write(nome.replace('Paulo Burlan de Freitas Mazza do Amaral', 'Mazza'));
+                document.write('<br>');
+
+                //método substr() - Extrair parte de uma string com base numa posição inicial, seguido de um valor
+                //que representa a quantidade de caracteres à frente da posição inicial
+                document.write(nome.substr(7, 5));
+                document.write('<br>');
+
+                //método tolowerCase() converte toda a entrada de uma string para letras minúsculas
+                document.write(nome.toLowerCase());
+                document.write('<br>');
+
+                //método toUpperCase() converte toda a entrada de uma string para letras maiúsculas
+                document.write(nome.toUpperCase());
+                document.write('<br>');
+
+                //método trim() - remove espaços em branco das extremidades de uma string informada
+                document.write('-' + nome.trim() + '-');
                 document.write('<br>');
             </script>
         </div>
